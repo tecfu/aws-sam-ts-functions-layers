@@ -13,7 +13,7 @@
     "@types/aws-lambda": "8.10.115",
     "@types/jest": "^29.5.4",
     "@types/node": "16.18.23",
-    "commons": "file:./layers/commons",
+    "common": "file:./common",
     "jest": "^29.6.4",
     "prettier": "2.8.8",
     "ts-jest": "^29.1.1",

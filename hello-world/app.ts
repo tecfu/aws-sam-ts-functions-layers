@@ -1,5 +1,5 @@
 import { APIGatewayProxyEvent, APIGatewayProxyResult } from "aws-lambda";
-import { responseBuilder } from "commons";
+import { responseBuilder } from "common";
 
 export const lambdaHandler = async (
   event: APIGatewayProxyEvent,

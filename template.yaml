@@ -13,7 +13,7 @@ Resources:
   LayerCommons:
     Type: AWS::Serverless::LayerVersion
     Properties:
-      ContentUri: layers/commons/
+      ContentUri: common/
       CompatibleRuntimes:
         - nodejs16.x
       RetentionPolicy: Delete
@@ -23,7 +23,7 @@ Resources:
   HelloWorldFunction:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: functions/hello-world/
+      CodeUri: hello-world/
       Handler: app.lambdaHandler
       Layers:
         - !Ref LayerCommons # the commons layer
