@@ -4,13 +4,38 @@
   "main": "index.js",
   "version": "1.0.0",
   "license": "ISC",
-  "dependencies": {},
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
   "devDependencies": {
     "@aws-sdk/types": "3.329.0",
     "@types/aws-lambda": "8.10.115",
+    "@types/jest": "^29.5.4",
     "@types/node": "16.18.23",
-    "prettier": "2.8.8",
     "commons": "file:./layers/commons",
+    "jest": "^29.6.4",
+    "prettier": "2.8.8",
+    "ts-jest": "^29.1.1",
     "typescript": "5.0.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": false,
+    "moduleNameMapper": {},
+    "transform": {
+      "^.+\\.ts?$": "ts-jest"
+    },
+    "testMatch": [
+      "**/test/*.test.ts",
+      "**/**/test/*.test.ts"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "js",
+      "json",
+      "node"
+    ],
+    "coveragePathIgnorePatterns": []
   }
 }
